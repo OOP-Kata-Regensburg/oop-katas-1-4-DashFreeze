@@ -24,16 +24,31 @@ public class Kata {
 
     /* Kata 2 Schreiben Sie eine Methode, die ein int[] als Parameter übergeben bekommt, die den Durchschnittswert aller gespeicherten Integers des Arrays berechnet und zurückgibt.*/
     public static int kataIntArrayAverage(int[] values) {
-        return 0;
+        int sum = 0;
+        for(int i = 0; i < kataIntArrayAverage.length; i++) {
+                sum += kataIntArrayAverage[i];
+        }
+        average = sum/kataIntArrayAverage.length;
+        return average;
     }
 
     /* Kata 3 Schreiben Sie eine Methode, die einen String als Parameter übergeben bekommt und in umgekehrter Reihenfolge zurückgibt.*/
     public static String kataStringReversed(String str) {
-        return "";
+        String newName;
+        for(int i = kataStringReversed.length; i > 0 ; i--){
+                char currentChar = kataStringReversed.charAt(i)
+                newName += currentChar
+        }
+        return newName;
     }
 
     /* Kata 4 Schreiben Sie eine Methode, die einen String als Parameter übergeben bekommt und jedes auftretende 'a' durch ein 'e' ersetzt. */
     public static String kataStringReplaceA(String str) {
-        return "";
+        for(int i = 0; i < kataStringReplaceA.length; i++) {
+                if(kataStringReplaceA.charAt(i)= "a"){
+                        kataStringReplaceA.charAt(i) = "e";
+                }
+        }
+        return kataStringReplaceA;
     }
 }
