@@ -10,7 +10,16 @@ public class Kata {
 
     /* Kata 1 Schreiben Sie eine Methode, die ein int[] als Parameter übergeben bekommt und die größte Zahl in diesem Array zurückgibt. */
     public static int kataIntArrayMaximum(int[] values) {
-        return 0;
+        for(int i = 1; i < kataIntArrayMaximum.length; i++){
+                for(int j = 0; j < kataIntArrayMaximum.length - i; i++) {
+                        if(kataIntArrayMaximum[j] < kataIntArrayMaximum[j+1]) {
+                                int number = kataIntArrayMaximum[j];
+                                kataIntArrayMaximum[j] = kataIntArrayMaximum[j+1];
+                                kataIntArrayMaximum[j+1] = number;
+                        }
+                }
+        }
+        return kataIntArrayMaximum[0];
     }
 
     /* Kata 2 Schreiben Sie eine Methode, die ein int[] als Parameter übergeben bekommt, die den Durchschnittswert aller gespeicherten Integers des Arrays berechnet und zurückgibt.*/
